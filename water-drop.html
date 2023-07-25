@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Water Drop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+            /* background: #121212; */
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(https://cid-inc.com/app/uploads/2020/10/leaf_area.jpg);
+            background-size: cover;
+            max-width: 700px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .c {
+            position: relative;
+        }
+
+        .drop {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background: #fff;
+            border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+            opacity: 0.7;
+            border: 2px solid #4b6f43;
+        }
+
+        .drop::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #172718;
+            border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+            box-shadow: -20px 30px 16px #000000, -40px 60px 32px #000000, inset -6px 6px 10px #1a3a0f, inset 2px 6px 10px #141414, inset 20px -20px 22px #62b218, inset 40px -40px 44px #161616;
+        }
+
+        .drop::after {
+            content: '';
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background: #ffffffdb;
+            border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+            left: 48px;
+            top: 22px;
+            box-shadow: 16px 40px 0 -10px #ffffff;
+            opacity: 1;
+        }
+
+        .drop1 {
+            left: -60px;
+            top: -75px;
+        }
+
+        .drop2 {
+            left: -200px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="c">
+        <div class="drop drop1"></div>
+
+        <div class="drop drop1 drop2"></div>
+
+    </div>
+</body>
+
+</html>
